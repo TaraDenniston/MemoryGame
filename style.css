@@ -1,0 +1,62 @@
+html {
+  background-color: rgb(235, 220, 201);
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+#game div.card {
+  background-color: rgb(238, 228, 214);
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+
+img {
+  visibility: hidden;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new_game {
+  visibility: hidden;
+  font-size: 30px;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+  background-color: rgb(212, 185, 150);
+}
+
+.transparent {
+  visibility: hidden;
+  border: none;
+  background-color: transparent;
+  position: absolute; 
+  bottom: 0px;
+  font-size: 11px;
+}
+
+.transparent > * {
+  background-color: rgb(238, 228, 214);
+  text-align: center;
+}
+
+.face_up img, .face_up .transparent{
+  visibility: visible;
+}
